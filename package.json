@@ -1,0 +1,18 @@
+{
+  "name": "golike-promisify",
+  "version": "1.0.0",
+  "description": "Provides function transformations for callback-based functions in the style of Go, using array destructuring.",
+  "main": "lib/golike-promisify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "files": ["lib/**/*"],
+  "author": "karashiiro",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^14.14.2",
+    "typescript": "^4.0.3"
+  }
+}
