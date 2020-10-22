@@ -1,18 +1,27 @@
 {
   "name": "golike-promisify",
   "version": "1.0.0",
-  "description": "Provides function transformations for callback-based functions in the style of Go, using array destructuring.",
-  "main": "lib/golike-promisify.js",
+  "description": "Provides function transformations for callback-based functions sort of in the style of Go, using array destructuring.",
+  "main": "golike-promisify.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "babel": "babel",
+    "build": "build",
+    "test": "mocha --require @babel/register \"test/**/*.js\""
   },
-  "files": ["lib/**/*"],
+  "files": [
+    "./lib/**/*"
+  ],
   "author": "karashiiro",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "regenerator-runtime": "^0.13.7"
+  },
   "devDependencies": {
-    "@types/node": "^14.14.2",
-    "typescript": "^4.0.3"
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/register": "^7.12.1",
+    "mocha": "^8.2.0",
+    "should": "^13.2.3"
   }
 }
