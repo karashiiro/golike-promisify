@@ -7,6 +7,7 @@ Provides function transformations for callback-based functions sort of in the st
 ## Example
 
 ```js
+import fs from "fs";
 import * as golp from "../golike-promisify";
 const readFile = golp.promisify(fs.readFile);
 
