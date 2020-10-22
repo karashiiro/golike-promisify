@@ -11,7 +11,7 @@ In error-first callbacks, the values after the error are undefined and can't be 
 
 ```js
 import fs from "fs";
-import * as golp from "../golike-promisify";
+import * as golp from "golike-promisify";
 const readFile = golp.promisify(fs.readFile);
 
 (async () => {
