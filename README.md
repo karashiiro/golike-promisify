@@ -1,6 +1,9 @@
 # golike-promisify
 Provides function transformations for callback-based functions sort of in the style of Go, using array destructuring.
 
+## Why return error-first tuples?
+In error-first callbacks, the values after the error are undefined and can't be grabbed with varargs.
+
 ## Installation
 `npm install golike-promisify`
 
